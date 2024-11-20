@@ -1,0 +1,29 @@
+.navbar {
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem;
+}
+
+.nav-logo img {
+    width: 5rem;
+    height: 5rem;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    align-items: center;
+}
+.nav-links a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 1.4rem;
+}
+
+.nav-site-name {
+    font-size: 2rem;
+}
