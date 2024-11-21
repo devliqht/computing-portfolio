@@ -1,3 +1,13 @@
+@font-face {
+    font-family: 'Horizon';
+    src: url('/css/fonts/horizon.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Horizon Outlined';
+    src: url('/css/fonts/horizon_outlined.otf') format('opentype');
+}
+
 .ibm-plex-mono-regular {
     font-family: "IBM Plex Mono", monospace;
     font-weight: 400;

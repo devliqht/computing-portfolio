@@ -4,6 +4,10 @@
     align-items: center;
     align-content: center;
     justify-content: center;
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(50,125,186,1) 28%, rgba(0,213,84,1) 49%, rgba(253,29,29,1) 83%, rgba(252,176,69,1) 100%);
+    /*filter: blur(30px) contrast(1.5);*/
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
 }
 
 .hero {
@@ -11,8 +15,7 @@
     flex-direction: column;
     height: 100vh;
     width: 100vw;   
-    background: rgb(13, 13, 13);
-    background-size: cover;
+    background: rgb(23, 23, 23);
     margin: 4rem;
     padding: 1rem;
     border-radius: 1rem;
@@ -23,6 +26,7 @@
     0px 5.5px 55.1px rgba(0, 0, 0, 0.103),
     0px 15px 151px rgba(0, 0, 0, 0.15)
     ;
+    z-index: 3;
 }
 
 .landing {
@@ -32,4 +36,21 @@
     width: 100%;
     align-items: center;
     align-content: center;
+}
+
+.landing-text {
+    font-family: 'Horizon';
+    font-size: 2.5rem;
+    transition: all 0.3s;
+    cursor: default;
+}
+
+.landing-subtext p {
+    font-size: 2rem;
+}
+
+@keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
