@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/hero/hero.css">
+    <link rel="stylesheet" href="css/carousel.css">
 
     <link rel="stylesheet" href="css/fonts.css">
 
@@ -21,11 +22,11 @@
    <div class="main-wrapper">
         <div class="hero">
             <div class="navbar"> 
+                <div class="nav-logo">
+                    <img src="assets/logo.png" alt="logo">
+                </div>
                 <div class="nav-links ibm-plex-mono-regular">
-                    <div class="nav-logo">
-                        <img src="assets/logo.png" alt="logo">
-                    </div>
-                    <a href="portfolios.html">Portfolios</a>
+                    <a href="pages/portfolio1.html">Portfolios</a>
                     <a href="sources.html">Sources</a>
                     <a href="about.html">About</a>
                     <a href="download.html">Download</a>
@@ -36,11 +37,67 @@
             </div>
             <div class="landing">
                 <div class="landing-text">
-                    <h1>WELCOME</h1>
+                    <h1>The Turing Site</h1>
                 </div>
-                <div class="landing-subtext league-spartan">
-                    <p>To the Turing Site</p>
+                <div class="carousel">
+                    <div class="carousel-container">
+                        <div class="carousel-slide">
+                            <img src="assets/carousel/slide1.png" alt="Slide 1">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="assets/carousel/slide2.png" alt="Slide 2">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="assets/carousel/slide3.png" alt="Slide 3">
+                        </div>
+                    </div>
+                    <button class="carousel-button prev">&lt;</button>
+                    <button class="carousel-button next">&gt;</button>
+                    <div class="carousel-dots">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
                 </div>
+                <script>
+                    const carousel = document.querySelector('.carousel-container');
+                    const slides = document.querySelectorAll('.carousel-slide');
+                    const dots = document.querySelectorAll('.dot');
+                    const prevButton = document.querySelector('.prev');
+                    const nextButton = document.querySelector('.next');
+                    
+                    let currentSlide = 0;
+                    
+                    function updateCarousel() {
+                        carousel.style.transform = `translateX(-${currentSlide * 100}%)`;
+                        dots.forEach((dot, index) => {
+                            dot.classList.toggle('active', index === currentSlide);
+                        });
+                    }
+                    
+                    prevButton.addEventListener('click', () => {
+                        currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+                        updateCarousel();
+                    });
+                    
+                    nextButton.addEventListener('click', () => {
+                        currentSlide = (currentSlide + 1) % slides.length;
+                        updateCarousel();
+                    });
+                    
+                    dots.forEach((dot, index) => {
+                        dot.addEventListener('click', () => {
+                            currentSlide = index;
+                            updateCarousel();
+                        });
+                    });
+                    
+                    // Auto-advance slides every 5 seconds
+                    setInterval(() => {
+                        currentSlide = (currentSlide + 1) % slides.length;
+                        updateCarousel();
+                    }, 5000);
+                </script>
             </div>
         </div>
     </div>
