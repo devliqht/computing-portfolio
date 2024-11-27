@@ -1,0 +1,92 @@
+.navbar {
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 1rem 1rem 0;
+}
+
+.nav-logo img {
+    width: 5rem;
+    height: 5rem;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    align-items: center;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 1.4rem;
+    position: relative;
+    padding: 0.5rem;
+    transition: all 0.2s ease;
+    text-align: center;
+    border: 2px solid transparent;
+    border-radius: 1rem;
+}
+
+.nav-links a:hover {
+    border-color: whitesmoke;
+}
+
+.nav-site-name {
+    font-size: 2rem;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0 0 10px 0;
+    border-bottom: 1px solid #404040;
+    color: #fff;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.search-bar {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: 2px solid transparent;
+    border-radius: 1rem;
+    background-color: #2a2a2a;
+    color: whitesmoke;
+    font-family: 'IBM Plex Mono', monospace;
+    transition: all 0.2s ease;
+}
+
+.search-bar:focus {
+    outline: none;
+    border-color: whitesmoke;
+}
+
+.search-button {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    color: whitesmoke;
+    cursor: pointer;
+    padding: 0.5rem;
+    border: 2px solid transparent;
+    border-radius: 1rem;
+    transition: all 0.2s ease;
+}
+
+.search-button:hover {
+    border-color: whitesmoke;
+}

@@ -4,16 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CIS1102N Website</title>
-    <link rel="stylesheet" href="../css/portfolios/portfolio1.css">
-    <link rel="stylesheet" href="../css/index.css">
-    <link rel="stylesheet" href="../css/carousel.css">
+    
+    <!-- Portfolios CSS-->
+    <link rel="stylesheet" href="../css/portfolios/content.css">
+    <link rel="stylesheet" href="../css/portfolios/format.css">
+    <link rel="stylesheet" href="../css/portfolios/footer.css">
+    <link rel="stylesheet" href="../css/portfolios/navbar.css">
+    <link rel="stylesheet" href="../css/portfolios/sidebar.css">
 
+    <!-- Some Global CSS -->
+    <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="../css/fonts.css">
 
+    <!-- GFonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/1a04278299.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="container">
@@ -24,32 +34,18 @@
                     <a href="#computer-science">Computer Science</a>    
                     <ul>
                         <li><a href="#cs-intro">Introduction to CS</a></li>
-                        <li><a href="#programming">Programming Basics</a></li>
-                        <li><a href="#algorithms">Algorithms</a></li>
+                        <li><a href="#programming">The Three Process of CS</a></li>
                     </ul>
                 </li>
                 <li>
-                    <a href="#information-systems">Information Systems</a>
+                    <a href="#computer-science">5 Computing Disciplines</a>    
                     <ul>
-                        <li><a href="#is-intro">Introduction to IS</a></li>
-                        <li><a href="#databases">Database Systems</a></li>
-                        <li><a href="#networks">Computer Networks</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#number-systems">Number Systems</a>
-                    <ul>
-                        <li><a href="#binary">Binary Numbers</a></li>
-                        <li><a href="#decimal">Decimal Numbers</a></li>
-                        <li><a href="#hexadecimal">Hexadecimal</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#computer-hardware">Computer Hardware</a>
-                    <ul>
-                        <li><a href="#cpu">CPU</a></li>
-                        <li><a href="#memory">Memory</a></li>
-                        <li><a href="#storage">Storage Devices</a></li>
+                        <li><a href="#cs-intro">ACM Computing Curricula 2005</a></li>
+                        <li><a href="#cs-intro">Computer Science</a></li>
+                        <li><a href="#programming">Computer Engineering</a></li>
+                        <li><a href="#algorithms">Software Engineering</a></li>
+                        <li><a href="#algorithms">Information Systems</a></li>
+                        <li><a href="#algorithms">Information Technology</a></li>
                     </ul>
                 </li>
             </ul>
@@ -73,13 +69,50 @@
                     <img src="../assets/logo.png" alt="logo">
                 </div>
             </nav>
-            <section class="hero" style="margin: 1rem; overflow-y: scroll;">
+            <section class="content" style="margin: 1rem; overflow-y: scroll;">
                 <div class="portfolio-info">
                     <p>Created at Sat Nov 23</p>
                     <p>Portfolio 1</p>  
                 </div>
-                <h1>Computer Science as a Discipline</h1>
+                <h1 id="cs-intro">Computer Science as a Discipline</h1>
                 <p>and the 5 computing disciplines and majors</p>
+
+                <hr>
+
+                <h2>Computing as a Discipline</h2>
+                <ul>
+                    <li>The computing profession is the people and institutions that have been created to take care of other people's concerns in information processing and coordination through worldwide communication systems.</li>
+                    <li>The profession contains various specialties such as computer science, computer engineering, software engineering, information systems, and information technology.</li>
+                </ul>
+                
+                <div class="info-modal">
+                    <div class="info-modal-title">
+                        <i class="fa-solid fa-circle-info fa-2x"></i>
+                        <h3 style="padding-left: 1rem; padding-top: 0;">Something to note</h3>
+                    </div>
+                    <ul>
+                        <li>
+                            Many activities in computing are not programming-for example, hardware design, system architecture, operating system structure, designing a database application, and validating models-therefore the notion that “computer science equals programming” is misleading. 
+                        </li>
+                    </ul>
+                </div>
+                
+                <h2>The Three Processes of Computer Science</h2>
+                <ul>
+                    <li>Process of Theory</li>
+                        <ul>
+                            <li>The approach of making formal definitions, conjecturing theorems, and creating proofs occurs at all levels in verifying correctness of hardware and software, analyzing performance of particular designs, and establishing the theoretical limitations of computation.</li>                    
+                        </ul>
+                    <li>Process of Abstraction</li>
+                        <ul>
+                            <li>Recognizing patterns in comparable situations and distilling models that express common characteristics, while discarding attributes that differ from case to case.</li>
+                        </ul>
+                    <li>Process of Design</li>
+                        <ul>
+                            <li>One designs to understand the principles and possibilities of computing; designs of systems and programs employ theoretical results and apply abstract notions, frameworks, and methods. In Computer Science, design aims more for better comprehension of the nature of computing than for production of a particular product.</li>
+                        </ul>
+                </ul>
+                
             </section>
         </main>
     </div>

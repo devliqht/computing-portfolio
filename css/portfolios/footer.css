@@ -1,0 +1,23 @@
+.container {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: row;
+}
+
+footer {
+    padding: 1rem;
+    text-align: center;
+    border-top: 1px solid #404040;
+}
+
+footer p {
+    margin: 0;
+    color: #b3b3b3;
+    font-size: 0.8rem;
+}
+
+.portfolio-info {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
