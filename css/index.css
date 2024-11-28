@@ -1,3 +1,12 @@
+:root {
+    --site-white: rgb(253, 253, 253);
+    --site-black: #1d1d1f;
+}
+
+img {
+    filter: invert(1);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -8,8 +17,6 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;   
-    overflow-y: hidden;
-    background: rgb(61,5,47);
-    background: linear-gradient(0deg, rgba(61,5,47,1) 0%, rgba(0,0,0,1) 100%); 
+    overflow-y: hidden; 
     color: #fff;
 }
