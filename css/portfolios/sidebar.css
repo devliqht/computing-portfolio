@@ -15,6 +15,9 @@
     background-size: 100% 100%, 100% 400%;
     animation: gradientBorder 15s ease infinite;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 @keyframes gradientBorder {
@@ -28,7 +31,12 @@
 }
 
 .sidebar-links li {
-    margin-bottom: 1rem;
+    margin-bottom: 1rem; margin-top: 1rem;
+}
+
+.nav-spacer {
+
+    border-top: 1px solid #333;
 }
 
 .sidebar-links ul {
