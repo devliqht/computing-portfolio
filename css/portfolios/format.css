@@ -15,7 +15,7 @@ body {
 
 .content h1, h2, h3, h4 {
     color: #fff;
-    padding-top: 1rem;
+    padding-top: 1rem; padding-bottom: 1rem;
 }
 
 h1 {
@@ -44,5 +44,9 @@ h4 {
 }
 
 .content hr {
-    margin-top: 1rem;
+    margin: 1rem;
+}
+
+.spacer {
+    padding: 1rem;
 }

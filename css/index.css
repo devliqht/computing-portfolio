@@ -1,10 +1,10 @@
 :root {
-    --site-white: rgb(253, 253, 253);
-    --site-black: #1d1d1f;
+    --site-black: rgb(253, 253, 253);
+    --site-white: #1d1d1f;
 }
 
 img {
-    filter: invert(1);
+    filter: invert(0);
 }
 
 * {
