@@ -1,6 +1,14 @@
 :root {
     --site-black: rgb(253, 253, 253);
     --site-white: #1d1d1f;
+
+    --site-light: #e1cec0;
+    --site-light-purple: #a97cdc;
+    --site-light-blue: #0c9fe7;
+    --site-light-pink: #ee78b9;
+    --site-pale-blue: #7b81df;
+    
+    --site-green: rgba(23, 255, 116, 0.707);
 }
 
 img {

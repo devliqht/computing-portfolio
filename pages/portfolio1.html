@@ -42,9 +42,9 @@
                             <li><a href="#cs-intro">Introduction to CS</a></li>
                             <li><a href="#three-process">The Three Process of CS</a></li>
                             <ul>
-                                <li><a href="#">Process of Theory</a></li>
-                                <li><a href="#">Process of Abstraction</a></li>
-                                <li><a href="#">Process of Design</a></li>
+                                <li><a href="#three-process">Process of Theory</a></li>
+                                <li><a href="#three-process">Process of Abstraction</a></li>
+                                <li><a href="#three-process">Process of Design</a></li>
                             </ul>
                         </ul>
                     </li>
@@ -55,9 +55,9 @@
                             <li><a href="#acm">ACM Computing Curricula 2005</a></li>
                             <li><a href="#cs-intro">Computer Science</a></li>
                             <li><a href="#cpe">Computer Engineering</a></li>
-                            <li><a href="#algorithms">Software Engineering</a></li>
-                            <li><a href="#algorithms">Information Systems</a></li>
-                            <li><a href="#algorithms">Information Technology</a></li>
+                            <li><a href="#se">Software Engineering</a></li>
+                            <li><a href="#is">Information Systems</a></li>
+                            <li><a href="#it">Information Technology</a></li>
                         </ul>
                     </li>
                     <div class="nav-spacer"></div>
@@ -70,8 +70,8 @@
         <main class="main-content">
             <nav class="navbar" style="justify-content: right; gap: 2rem;">
                 <div class="search-container">
-                    <input type="text" class="search-bar" placeholder="Search...">
-                    <button class="search-button">🔍</button>
+                    <input type="text" id="search-bar" class="search-bar" placeholder="Search...">
+                    <button class="search-button" onclick="search()">🔍</button>
                 </div>
                 <ul class="nav-links ibm-plex-mono-regular">
                     <li><a href="../index.html">Home</a></li>
@@ -83,7 +83,7 @@
                 </div>      
             </nav>
             <section class="content" style="margin: 1rem; overflow-y: scroll;">
-                <h1 id="cs-intro" style="margin-top: 0;">Computer Science as a Discipline</h1>
+                <h1 id="cs-intro" style="margin-top: 0; color: var(--site-green); text-align: center;" >Computer Science as a Discipline</h1>
                 <div class="enclosed">
                     <ul>
                         <li>The computing profession is the people and institutions that have been created to take care of other people's concerns in information processing and coordination through worldwide communication systems.</li>
@@ -110,6 +110,7 @@
                             </ul>
                     </ul>       
                 </div>
+                <div class="spacer"></div>
 
                 <div class="info-modal">
                     <div class="info-modal-title">
@@ -125,7 +126,7 @@
   
                 <div class="spacer"></div>
 
-                <h1 id="cs-disciplines">The 5 Computing Disciplines and Majors</h1>
+                <h1 id="cs-disciplines" style="text-align: center">The 5 Computing Disciplines and Majors</h1>
                 <h2 id="acm">ACM Computing Curricula 2005</h2>
                 <div class="enclosed">
                     <img class="content-img" src="../assets/disciplines/acm.png" alt="ACM Computing Curricula 2005" />
@@ -137,13 +138,50 @@
                 <div class="spacer"></div>
 
                 <h1 id="cpe">Computer Engineering</h1>
-                <div class="enclosed">
+                <div class="enclosed no-shadow">
                     <img class="content-img" src="../assets/disciplines/cpe.png" alt="Computer Engineering">
                     <p>Computer engineering is defined as the discipline that embodies the science and technology of design, construction, implementation, and maintenance of software and hardware components of modern computing systems and computer-controlled equipment.</p>
+                </div>
+
+                <div class="spacer"></div>
+
+                <h1 id="se">Software Engineering</h1>
+                <div class="enclosed no-shadow">
+                    <img class="content-img" src="../assets/disciplines/se.png" alt="Computer Engineering">
+                    <p>Software Engineering is "a systematic approach to analysis, design, assessment,
+                        implementation, test, maintenance and reengineering of software, that is, the
+                        application of engineering to software. In the software engineering approach,
+                        several models for the software life cycle are defined, and many methodologies for
+                        the definition and assessment of the different phases of a life-cycle model." </p>
+                </div>
+
+                <div class="spacer"></div>
+
+                <h1 id="is">Information Systems</h1>
+                <div class="enclosed no-shadow">
+                    <img class="content-img" src="../assets/disciplines/is.png" alt="Computer Engineering">
+                    <p>Information Systems
+                        Information systems is an academic discipline of the complementary networks of
+                        hardware, software, users and business processes that organizations use to collect,
+                        filter, process, create and distribute data. Any specific information system aims to
+                        support planning, operations, management and decision making.</p>
+                </div>
+
+                <div class="spacer"></div>
+
+                <h1 id="it">Information Technology</h1>
+                <div class="enclosed no-shadow">
+                    <img class="content-img" src="../assets/disciplines/it.png" alt="Computer Engineering">
+                    <p>
+                        Information Technology is the application of technology to solve business or
+                        organizational problems on a broad scale. In businesses, the IT department serves
+                        to ensure that the computer network, computer hardware, computing devices, and
+                        other physical devices all function properly.</p>
                 </div>
                 
             </section>
         </main>
     </div>
+    <script src="../js/searchBar.js" nodefer></script>
 </body>
 </html>

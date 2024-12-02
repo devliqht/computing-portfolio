@@ -50,3 +50,7 @@ h4 {
 .spacer {
     padding: 1rem;
 }
+
+.spacer.double {
+    padding: 2rem;
+}
