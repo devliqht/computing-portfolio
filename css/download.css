@@ -1,0 +1,42 @@
+.download-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0 3rem 5rem 3rem;
+    gap: 1rem;
+}
+
+.download-img {
+    max-width: 20%;
+}
+
+.download {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    padding: 2rem;
+    border: 2px solid #333;
+    border-radius: 1rem;
+    width: 36rem;
+    align-items: center;
+}
+
+.download-text {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.spacer {
+    padding: 1rem;
+}
+
+hr {
+    margin: 1rem 0 1rem 0;
+}
+
+p, h1, h2, h3, h4 {
+    color: var(--site-black);
+}

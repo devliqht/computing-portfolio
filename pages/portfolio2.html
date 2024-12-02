@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CIS1102N Website</title>
+    
+    <!-- Portfolios CSS-->
+    <link rel="stylesheet" href="../css/portfolios/content.css">
+    <link rel="stylesheet" href="../css/portfolios/format.css">
+    <link rel="stylesheet" href="../css/portfolios/footer.css">
+    <link rel="stylesheet" href="../css/portfolios/navbar.css">
+    <link rel="stylesheet" href="../css/portfolios/sidebar.css">
+
+    <!-- Some Global CSS -->
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/fonts.css">
+
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <!-- GFonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/1a04278299.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="grouped-nav">
+                <div class="logo league-spartan">Turing</div>
+                <ul class="sidebar-links ibm-plex-mono-regular">
+                    <li>
+                        <a href="#is-intro">Information Systems</a>    
+                        <ul>
+                            <li><a href="#info">Data and Information</a></li>
+                            <li><a href="#def-info">Definitions of Information</a></li>
+                            <ul>
+                                <li><a href="#asprocess">Information as process</a></li>
+                                <li><a href="#asknowledge">Information as knowledge</a></li>
+                                <li><a href="#asthing">Information as thing</a></li>
+                            </ul>
+                        </ul>
+                    </li>
+                    <div class="nav-spacer"></div>
+                    <li>    
+                        <a href="#is-components">Components of Information Systems</a>    
+                        <ul>
+                            <li><a href="#technology">Technology</a></li>
+                            <li><a href="#people">People</a></li>
+                            <li><a href="#process">Process</a></li>
+                            <li><a href="#data">Data</a></li>
+                        </ul>
+                    </li>
+                    <div class="nav-spacer"></div>
+                    <li>
+                        <a href="#support-systems">Different types of support systems</a>
+                        <ul>
+                            <li><a href="#tps">Transaction Processing System</a></li>
+                            <li><a href="#oss">Operations Support System</a></li>
+                            <li><a href="#mss">Management Support Systems</a></li>
+                            <ul>
+                                <li><a href="#dss">Decision Support System</a></li>
+                                <li><a href="#eis">Executive Information System</a></li>
+                                <li><a href="#mis">Management Information System</a></li>
+                            </ul>
+                        </ul>
+                    </li>
+                    <div class="nav-spacer"></div>
+                </ul>
+            </div>
+            <footer style="bottom: 20px; color: #b3b3b3; font-size: 0.8rem;">
+                <p>&copy; 2024 The Turing Site. Developed by Matt Cabarrubias</p>
+            </footer>
+        </aside>
+        <main class="main-content">
+            <nav class="navbar" style="justify-content: right; gap: 2rem;">
+                <div class="search-container">
+                    <input type="text" class="search-bar" placeholder="Search...">
+                    <button class="search-button">🔍</button>
+                </div>
+                <ul class="nav-links ibm-plex-mono-regular">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="nav-logo">
+                    <img src="../assets/logo.png" alt="logo">
+                </div>      
+            </nav>
+            <section class="content" style="margin: 1rem; overflow-y: scroll;">
+                <h1 id="is-intro" style="margin-top: 0;">Information Systems</h1>
+                <div class="enclosed">
+                    <p><span class="ibm-plex-mono-regular" style="color: white; font-size: 1.7rem;">Information Systems</span> are a coordinated set of components and resources that collect, process, store, and distribute information. These systems typically include hardware, software, data, people, and procedures. They are designed to support decision-making, coordination, control, analysis, and visualization in an organization or enterprise. A book defines Information Systems (IS) as systems that collects, processes, stores, analyzes and disseminates information for a specific purpose.</p>
+                </div>
+                <h1 id="info" style="margin-top: 0;">Data and Information</h1>
+                <div class="enclosed">
+                   <p>The term “information” is ambiguous.  At its core, "information" can be seen as a collection of data that has been processed, structured, or presented in a way that makes it meaningful to a recipient.</p>
+                   <div class="spacer"></div>
+                   <p>There are three principal uses of the word information, as according to Buckland's book about Information and Information Systems:</p>
+                   <ul>
+                        <li><span style="color: white">Information-as-process</span>, what someone knows is changed when he or she is informed.</li>
+                        <li><span style="color: white">Information-as-knowledge</span>, information is also used to denote that which is imparted in information-as-process.</li>
+                        <li><span style="color: white">Information-as-thing</span>, information is also used attributively for objects, such as data and documents, that are referred to as information because they are regarded as being informative.</li>
+                   </ul>
+                </div>
+                <h1 id="def-info">Definitions of Information</h1>
+                <div class="enclosed">
+                    <ul>
+                        <li><h3 style="color: white">Information as Process</h3></li>
+                            <ul>
+                                <li>Information transforms an individual’s understanding or knowledge. It involves the act of becoming informed, where what a person knows is altered. Essentially, information represents the act of conveying knowledge—either through telling or being told. This process is about the exchange and communication of information.</li>                    
+                            </ul>
+                        <li><h3 style="color: white">Information as Knowledge</h3></li>
+                            <ul>
+                                <li>Information is the understanding or insights that individuals gain from processing and interpreting information. It highlights that information is not just raw data or facts but becomes valuable when it is comprehended and integrated into one's existing framework of understanding.</li>
+                            </ul>
+                        <li><h3 style="color: white">Information as Thing</h3></li>
+                            <ul>
+                                <li>Information is considered as a tangible or concrete entity. In this context, information is viewed as a physical or digital object that can be stored, retrieved, and transferred. This could include documents, files, books, databases, or any material form where information is recorded.</li>
+                            </ul>
+                    </ul>       
+                </div>
+                <h1 id="is-components">Components of Information Systems</h1>
+                <div class="enclosed">
+                    <h2>Technology</h2>
+                    <h3>Hardware</h3>
+                    <p>Hardware represents the physical components of an information system. Some can be seen or touched easily, while others reside inside a device that can only be seen by opening up the device's case. Keyboards, mice, pens, disk drives, iPads, printers, and flash drives are all visible examples. Computer chips, motherboards, and internal memory chips are the hardware that resides inside a computer case and not usually visible from the outside.</p>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
