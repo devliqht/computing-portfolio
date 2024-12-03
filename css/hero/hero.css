@@ -9,15 +9,16 @@
     /*filter: blur(30px) contrast(1.5);*/   
     background-size: cover;
     background-position-x: 100%;
+    overflow-y: hidden;
 }
 
 .hero {
     display: flex;
     flex-direction: column;
     height: 100vh;
-    width: 100vw;   
+    width: 100vw;
     background: var(--site-white);
-    margin: 4rem;
+    margin: 3rem;
     padding: 1rem;
     border-radius: 1rem;
     box-shadow:
@@ -33,22 +34,20 @@
 .landing {
     display: flex;
     flex-direction: column;
-    height: 100%;
     width: 100%;
     align-items: center;
     align-content: center;
-    padding-top: 1rem;
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 
 .landing-text {
     font-family: 'Horizon';
     color: var(--site-black);
-    font-size: 2rem;
     transition: all 0.3s;
     cursor: default;
     text-align: center;
     margin-bottom: 2rem;
+    font-size: 1.5rem;
 }
 
 .landing-subtext p {
@@ -134,8 +133,14 @@
 .portfolio-container h1 {
     text-align: center;
     color: var(--site-black);
+    font-size: 1.2rem;
 }
 
 .portfolio-container-img {
     max-width: 20%;
+    padding-bottom: 1rem;
+}
+
+.footer {
+    
 }
