@@ -35,6 +35,7 @@
         <aside class="sidebar">
             <div class="grouped-nav">
                 <div class="logo league-spartan">Turing</div>
+                <span id="counter" class="ibm-plex-mono-regular">Matches: 0</span>
                 <ul class="sidebar-links ibm-plex-mono-regular">
                     <li>
                         <a href="#is-intro">Information Systems</a>    
@@ -82,8 +83,8 @@
         <main class="main-content">
             <nav class="navbar" style="justify-content: right; gap: 2rem;">
                 <div class="search-container">
-                    <input type="text" class="search-bar" placeholder="Search...">
-                    <button class="search-button">🔍</button>
+                    <input type="text" id="search-bar" class="search-bar" placeholder="Search...">
+                    <button class="search-button" onclick="search()">🔍</button>
                 </div>
                 <ul class="nav-links ibm-plex-mono-regular">
                     <li><a href="../index.html">Home</a></li>
@@ -250,5 +251,6 @@ involved in the information system’s operation.
             </section>
         </main>
     </div>
+    <script src="../js/searchBar.js" nodefer></script>
 </body>
 </html>
