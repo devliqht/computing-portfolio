@@ -8,6 +8,12 @@
     gap: 1rem;
 }
 
+.download-wrapper a {
+    color: whitesmoke;
+    text-decoration: none;
+    cursor: pointer;
+}
+
 .download-img {
     max-width: 20%;
 }
